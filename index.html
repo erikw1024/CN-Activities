@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#204b45">
+  <meta name="description" content="A thoughtful guide to local classes, groups and volunteering around Crows Nest, Sydney. Discover, compare and shortlist activities that appeal to you.">
+  <meta property="og:title" content="Good Days | Things to do around Crows Nest">
+  <meta property="og:description" content="Explore 34 local and online opportunities for conversation, culture, creativity and volunteering.">
+  <title>Good Days | Things to do around Crows Nest</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a href="#explore" class="brand" id="brandLink" aria-label="Good Days, return to Explore">
+        <span class="brand-icon" aria-hidden="true">
+          <svg width="31" height="31" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="8" fill="#EFC88B"/><path d="M16 2.5v5M16 24.5v5M29.5 16h-5M7.5 16h-5M25.55 6.45l-3.5 3.5M9.95 22.05l-3.5 3.5M25.55 25.55l-3.5-3.5M9.95 9.95l-3.5-3.5" stroke="#EFC88B" stroke-width="2.2" stroke-linecap="round"/></svg>
+        </span>
+        <span class="brand-text">Good Days <small>CROWS NEST & BEYOND</small></span>
+      </a>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <button type="button" class="nav-link is-active" data-view="explore" aria-current="page">Explore</button>
+        <button type="button" class="nav-link" data-view="shortlist">My shortlist <span class="nav-count" id="navCount" hidden>0</span></button>
+        <button type="button" class="nav-link" data-view="about">About this guide</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="exploreView" class="view">
+      <div class="hero-wrap">
+        <div class="container hero">
+          <div class="hero-copy">
+            <span class="eyebrow"><span class="eyebrow-dot"></span> YOUR LOCAL ACTIVITY GUIDE</span>
+            <h1>A little more<br>to <em>look forward to.</em></h1>
+            <p>Interesting people. New conversations. Things worth learning. Explore local groups, classes and volunteering around Crows Nest, at your own pace.</p>
+            <div class="hero-actions">
+              <a href="#explore-activities" class="btn btn-primary">Explore activities <span aria-hidden="true">↗</span></a>
+              <button class="btn btn-light" type="button" data-view="shortlist">View my shortlist <span aria-hidden="true">♡</span></button>
+              <a class="btn btn-light" href="good-days-activity-guide.pdf" download>Download the PDF guide <span aria-hidden="true">↓</span></a>
+            </div>
+            <div class="hero-facts"><span><strong>34</strong> options</span><span class="fact-divider"></span><span><strong>6</strong> interests</span><span class="fact-divider"></span><span><strong>Local & online</strong></span></div>
+          </div>
+          <div class="hero-scene" aria-hidden="true">
+            <div class="scene-deco scene-deco-top"></div><div class="scene-deco scene-deco-bottom"></div>
+            <div class="scene-card scene-card-main"><div class="art-circle"><svg viewBox="0 0 180 180" fill="none" width="180"><circle cx="90" cy="90" r="85" fill="#F9E8D9"/><path d="M32 101c21-32 45-47 72-41 25 6 34 25 43 52" stroke="#345A50" stroke-width="10" stroke-linecap="round"/><path d="M53 111c14-9 36-14 52-10s29 15 35 28" stroke="#E0A87B" stroke-width="10" stroke-linecap="round"/><circle cx="62" cy="70" r="16" fill="#315B52"/><circle cx="118" cy="70" r="16" fill="#E0A87B"/><path d="M62 90v35M118 90v35" stroke="#315B52" stroke-width="7" stroke-linecap="round"/><path d="M79 87l14 17M101 104l14-17" stroke="#315B52" stroke-width="6" stroke-linecap="round"/><path d="M53 134c25-13 50-12 78 0" stroke="#315B52" stroke-width="7" stroke-linecap="round"/></svg></div><div class="scene-title">Good conversations</div><div class="scene-caption">Community • Connection • Curiosity</div></div>
+            <div class="scene-card scene-card-float"><span class="float-glyph">✎</span><span>Keep learning</span></div>
+            <div class="scene-card scene-card-small"><span class="float-sun">✳</span><span>Try something new</span></div>
+          </div>
+        </div>
+      </div>
+
+      <section class="container section featured-section" aria-labelledby="featuredHeading">
+        <div class="section-head"><div><span class="kicker">A GOOD PLACE TO BEGIN</span><h2 id="featuredHeading">Six worth a closer look</h2><p>A mix of stimulating conversations, creativity and opportunities to help others.</p></div><a class="text-link" href="#explore-activities">See every activity <span aria-hidden="true">→</span></a></div>
+        <div class="featured-grid" id="featuredGrid"></div>
+      </section>
+
+      <section class="container section catalogue-section" id="explore-activities" aria-labelledby="catalogueHeading">
+        <div class="section-head"><div><span class="kicker">FIND YOUR INTEREST</span><h2 id="catalogueHeading">Explore all activities</h2><p>Choose a category, search for a particular interest, or browse the full collection.</p></div></div>
+        <div class="category-list" id="categoryList" role="group" aria-label="Filter by category"></div>
+        <div class="filter-panel">
+          <label class="search-wrap" for="searchInput"><span aria-hidden="true" class="search-glyph">⌕</span><input type="search" id="searchInput" placeholder="Search activities, places or interests…" autocomplete="off"><span class="sr-only">Search activities</span></label>
+          <label class="select-wrap" for="areaFilter"><span class="label-overline">AREA</span><select id="areaFilter"><option value="all">All areas</option><option value="near">Crows Nest & nearby</option><option value="online">Online or at home</option><option value="elsewhere">Further afield</option></select></label>
+          <label class="select-wrap" for="accessFilter"><span class="label-overline">ACCESSIBILITY</span><select id="accessFilter"><option value="all">All activities</option><option value="low-demand">Low physical demand</option><option value="after-clearance">After shoulder clearance</option><option value="check-access">Check venue access</option></select></label>
+          <label class="select-wrap" for="sortFilter"><span class="label-overline">SORT BY</span><select id="sortFilter"><option value="recommended">Suggested first</option><option value="az">Name A–Z</option><option value="area">Area</option></select></label>
+        </div>
+        <div class="results-toolbar"><p id="resultsCount" role="status" aria-live="polite"></p><button class="link-button" type="button" id="clearFilters">Clear filters ↺</button></div>
+        <div class="activity-grid" id="activityGrid"></div>
+        <div class="empty-state" id="emptyResults" hidden><div class="empty-symbol">⌕</div><h3>No matching activities</h3><p>Try a different category, location or search term.</p><button type="button" class="btn btn-primary" id="resetFilters">Show everything</button></div>
+      </section>
+    </section>
+
+    <section id="shortlistView" class="view" hidden>
+      <div class="inner-hero"><div class="container"><span class="eyebrow"><span class="eyebrow-dot"></span> THE ONES THAT CAUGHT YOUR EYE</span><h1>My shortlist<span class="heading-dot">.</span></h1><p>Keep track of activities you want to try, add notes and share your list with family.</p></div></div>
+      <div class="container section shortlist-content">
+        <div class="shortlist-toolbar"><div class="shortlist-summary" id="shortlistSummary"></div><div class="shortlist-actions"><button type="button" class="btn btn-outline" id="copyShortlist">Copy list</button><button type="button" class="btn btn-outline" id="downloadCsv">Download CSV</button><button type="button" class="btn btn-primary" id="printShortlist">Print list <span aria-hidden="true">↗</span></button></div></div>
+        <div class="shortlist-group"><h2>Interested <span class="group-count" id="interestedCount">0</span></h2><div class="activity-grid" id="interestedGrid"></div></div>
+        <div class="shortlist-group"><h2>Maybe later <span class="group-count" id="maybeCount">0</span></h2><div class="activity-grid" id="maybeGrid"></div></div>
+        <div id="shortlistEmpty" class="empty-state"><div class="empty-symbol">♡</div><h3>Nothing saved yet</h3><p>Look through the activities and select “I'm interested” or “Maybe later” to build your personal list.</p><button type="button" class="btn btn-primary" data-view="explore">Explore activities</button></div>
+        <div class="privacy-note"><span class="info-icon" aria-hidden="true">i</span><p><strong>Your choices stay on this device.</strong> This guide doesn't need an account. Your selections and notes are stored in this browser, not synced between devices. Use Copy list, Download CSV or Print to share them.</p></div>
+      </div>
+    </section>
+
+    <section id="aboutView" class="view" hidden>
+      <div class="inner-hero"><div class="container"><span class="eyebrow"><span class="eyebrow-dot"></span> A GUIDE MADE FOR EXPLORING</span><h1>How to use<br><em>Good Days.</em></h1><p>A simple way to discover more of what's happening around Crows Nest.</p></div></div>
+      <div class="container section about-content">
+        <div class="about-grid"><article class="about-tile"><span class="about-number">01</span><h2>Explore</h2><p>Browse six interest areas or use the search and location filters. Each activity includes an organiser link and practical details.</p></article><article class="about-tile"><span class="about-number">02</span><h2>Make a shortlist</h2><p>Mark an activity as “Interested”, “Maybe later” or “Not for me”. You can also add private notes or questions to ask.</p></article><article class="about-tile"><span class="about-number">03</span><h2>Follow up</h2><p>Open the organiser's website to check dates, vacancies and access. Share or print your shortlist to arrange an outing with someone.</p></article></div>
+        <div class="about-split"><div><span class="kicker">GOOD TO KNOW</span><h2>Comfort and accessibility first.</h2><p>Activities were selected with shorter outings, seated participation and shoulder recovery in mind. Some music and art activities will need to wait until a treating clinician confirms it is safe to resume them.</p><p>Before attending, confirm whether there are steps or ramps, how far it is from drop-off to the activity room, seating options, accessible toilets and the length of the session.</p></div><div class="source-card"><span class="source-card-icon">✳</span><h3>About these listings</h3><p>The original directory was researched and compiled on <strong>12 November 2026</strong>. This site keeps the same 34 options, excluding U3A. Programmes, fees and volunteering vacancies can change, particularly into 2027.</p><p><strong>Always confirm details with the organiser.</strong> This is a personal guide, not a live booking service.</p><p><a class="text-link" href="good-days-activity-guide.pdf" download>Download the complete printable PDF guide ↗</a></p></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><div><div class="footer-brand">✳ Good Days</div><p>A little more to look forward to, around Crows Nest.</p></div><div class="footer-meta"><span>34 options · 6 categories</span><span>Directory compiled 12 November 2026</span><span>Designed to explore at your own pace</span></div></div></footer>
+
+  <dialog id="activityDialog" aria-labelledby="dialogTitle"><div class="dialog-shell"><button class="dialog-close" type="button" id="closeDialog" aria-label="Close activity details">×</button><div id="dialogContent"></div></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
