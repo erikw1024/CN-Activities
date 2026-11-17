@@ -23,3 +23,11 @@ jobs:
         run: npx playwright install --with-deps chromium
       - name: Test site interactions
         run: node tests/site-smoke.mjs
+      - name: Check published GitHub Pages URL (informational)
+        if: always()
+        run: |
+          STATUS=$(curl -L -s -o /dev/null -w "%{http_code}" --max-time 15 "https://erikw1024.github.io/github.io-crows-nest-activities-/")
+          echo "Public Pages HTTP status: $STATUS"
+          if [ "$STATUS" != "200" ]; then
+            echo "::warning::GitHub Pages is not yet returning HTTP 200. Check Settings > Pages."
+          fi
