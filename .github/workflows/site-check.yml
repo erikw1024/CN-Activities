@@ -1,0 +1,25 @@
+name: Website smoke tests
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser test dependency
+        run: npm install --ignore-scripts
+      - name: Install browser
+        run: npx playwright install --with-deps chromium
+      - name: Test site interactions
+        run: node tests/site-smoke.mjs
