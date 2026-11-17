@@ -63,3 +63,11 @@
 @media(max-width:520px){.hero-photo-scene{height:260px}.story-grid{grid-template-columns:1fr}.story-tile{height:210px}.story-tile-body strong{font-size:1.7rem}.story-tile-body{padding:25px}.activity-photo{height:204px}.featured-grid .activity-photo{height:225px}.category-visual-bg{opacity:.2}.detail-photo-img{height:190px}}
 @media(prefers-reduced-motion:reduce){.activity-photo-img,.story-image,.category-visual-bg{transition:none!important}}
 @media print{.activity-photo,.detail-photo,.visual-story,.website-preview{display:none!important}}
+
+/* Graceful, attractive local artwork when an external photo cannot load. */
+.hero-photo-primary.image-unavailable,.hero-photo-secondary.image-unavailable,.hero-photo-tertiary.image-unavailable{background:radial-gradient(circle at 72% 32%,#f7d6a2 0 16%,transparent 17%),linear-gradient(136deg,#a2c7b0,#346b5c 72%,#275649);}
+.hero-photo-secondary.image-unavailable{background:radial-gradient(circle at 28% 25%,#f1c79a 0 15%,transparent 16%),linear-gradient(135deg,#d4c5a7,#829f90 65%,#376459);}
+.hero-photo-tertiary.image-unavailable{background:linear-gradient(120deg,#c1b49b,#a7c7bc 40%,#476b61);}
+.hero-photo-primary.image-unavailable:before,.hero-photo-secondary.image-unavailable:before,.hero-photo-tertiary.image-unavailable:before{content:"";position:absolute;border:2px solid #ffffff50;inset:15%;border-radius:54% 46% 44% 56%;transform:rotate(-12deg);}
+.story-tile.image-unavailable{background:linear-gradient(130deg,#9dbfae,#426959 72%,#1b443a);}
+.story-tile.image-unavailable:before{content:"✦";position:absolute;top:12%;right:13%;color:#fff8;font-size:95px;line-height:1;}
